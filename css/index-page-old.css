@@ -1,0 +1,85 @@
+/* Style for login page [index_page.html]: */
+
+/* Outdated practice version made while building
+first project ever. This version has no scaling or
+responsive design whatsoever. Everything is rewritten
+in style.css.*/
+
+/* Global edits: */
+body {
+
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: #fefcf6;
+
+    text-align: center;
+}
+/* ---------------------------------------- */
+
+/* Logo: */
+.welcome-scr-logo {
+
+    /* Logo edits: */
+    text-align: center;
+    margin-top: 20px;
+}
+.welcome-message-txt {
+    
+    /* Only the container
+    containing (lol) the
+    welcome message <h1>. */
+    font-size: 40px;
+    margin: 10px;
+}
+.welcome-message-txt h1 {
+
+    /* Only manupulating the
+    'welcome' text <h1> here */
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+
+    letter-spacing: 10px;
+}
+.welcome-nav-pages {
+    
+    /* Nav. pages div: */
+    display: inline-block;
+    padding: 20px;
+    padding-left: 115px;
+    padding-right: 120px;
+    margin: 10px;
+    margin-top: 30px;
+
+    text-align: left;
+    list-style-type: none;
+
+    /* border: 1px solid red; */
+}
+.welcome-nav-pages li ul a {
+    
+    /* This is only affecting
+    list and links inside prior
+    div container. */
+    font-size: 25px;
+    list-style-type: none;
+    text-decoration: none;
+}
+.index-add-info {
+    
+    /* Bottom info: */
+    padding: 20px;
+    padding-bottom: 0px;
+    margin: 20px;
+    margin-top: 130px;
+}
+
+
+
+
+/* Please note that the first page I did was
+login page and style css was done according
+to it's desired design. That's why I'm editing
+global settings of the  design here. Those 
+edits are for this page and will add simplified
+look to this 'main' nav. page. */

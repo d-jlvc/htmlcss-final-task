@@ -1,0 +1,471 @@
+/* Style for login page [checkout_page.html]: */
+
+/* Outdated practice version made while building
+first project ever. This version has no scaling or
+responsive design whatsoever. Everything is rewritten
+in style.css.*/
+
+/* Checkout page main: */
+.checkout-page {
+    
+    display: inline;
+    text-align: left;
+    margin-left: 60px;
+    
+}
+.checkout-title {
+    
+    /* Login title edits: */
+    margin: 60px;
+    margin-bottom: 5px;
+    padding: 20px;
+    padding-bottom: 5px;
+    
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+/* This is a checkout form only: */
+.checkout-form {
+    
+    /* Main checkout form containing
+    title, shipping information and
+    payment information: */
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    
+    margin: 20px;
+    margin-top: 30px;
+    margin-left: 7%;
+    
+    /* border: 2px double black; */
+}
+
+
+/* Shipping: */
+/* ------------------------------------ */
+.shipping {
+    
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    
+    /* border: 1px solid blue; */
+}
+.shipping h3 {
+    
+    text-align: left;
+    width: 50%;
+    font-size: 20px;
+}
+.shipping input {
+    
+    border-radius: 5px 5px 5px 5px;
+    border: 1.8px solid #d5ab44;
+}
+/* This is a shipping information only: */
+.shipping-info-general {
+    
+    display: inline-block;
+    
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    
+    border: 1.8px solid #d5ab44;
+    border-radius: 15px 0px 0px 0px;
+}
+
+/* Shipping info: */
+.shipping-info-first-name {
+    
+    display: inline-block;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 18px;
+
+    /* border: 3px dotted green; */
+}
+.shipping-info-first-name input {
+    
+    width: 200px;
+    height: 30px;
+}
+.shipping-info-last-name {
+    
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+
+    /* border: 3px dotted green; */
+}
+.shipping-info-last-name input {
+    
+    width: 200px;
+    height: 30px;
+}
+.shipping-info-address {
+    
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 18px;
+
+    /* border: 3px dotted green; */
+}
+.shipping-info-address input {
+    
+    width: 405px;
+    height: 30px;
+}
+.shipping-info-addnum {
+    
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 18px;
+    
+    /* border: 3px dotted green; */
+}
+.shipping-info-addnum input {
+
+    width: 405px;
+    height: 30px;
+}
+.shipping-info-dropdowns {
+    
+    display: block;
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 18px;
+
+    /* border: 3px dotted greenyellow; */
+}
+.shipping-info-dropdowns select {
+
+    border-radius: 15px;
+    font-size: 15px;
+    border: 1px solid #d5ab44;
+    width: 100px;
+    
+}
+.shipping-info-dropdowns select:hover {
+
+    color: #d5ab44;
+}
+/* Styling each dropdown separately: */
+.ddn-country {
+
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 45px;
+
+    /* border: 2px double blueviolet; */
+}
+.ddn-city {
+
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* border: 2px double blueviolet; */
+}
+.ddn-zip {
+
+    display: inline-block;
+    margin-left: 45px;
+
+    /* border: 2px double blueviolet; */
+}
+.shipping-saveinfo {
+    
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+
+    /* border: 2px double blueviolet; */
+}
+/* ------------------------------------ */
+
+
+/* Payment: */
+/* ------------------------------------ */
+.payment {
+    
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px;
+    width: 100%;
+
+    /* border: 2px solid blue; */
+}
+.payment h3 {
+
+    text-align: left;
+    width: 50%;
+    font-size: 20px;
+}
+.payment input {
+
+    border: 1px solid #d5ab44;
+    border-radius: 5px;
+
+}
+
+/* This is a payment information only: */
+.payment-info-general {
+
+    display: inline-block;
+
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+
+    border: 1.8px solid #d5ab44;
+    border-radius: 0px 0px 15px 0px;
+}
+
+/* Payment info: */
+.paypal-button {
+    
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.paypal-button button {
+    
+    width: 150px;
+    height: 30px;
+    
+    border: 0.5px solid #d5ab44;
+    border-radius: 5px 5px 5px 5px;
+}
+.paypal-button button:hover {
+    
+    /* Hover recolor: */
+    background-color: #d5ab44;
+}
+.cash-button {
+    
+    display: inline-block;
+}
+.cash-button button {
+
+    display: inline-block;
+
+    width: 150px;
+    height: 30px;
+
+    border: 0.5px solid #d5ab44;
+    border-radius: 5px 5px 5px 5px;
+}
+.cash-button button:hover {
+
+    /* Hover recolor: */
+    background-color: #d5ab44;
+}
+.payment-info-name {
+
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.payment-info-name input {
+    
+    width: 405px;
+    height: 30px;
+    
+}
+.payment-info-card-num {
+    
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.payment-info-card-num input {
+    
+    text-align: center;
+    
+    width: 405px;
+    height: 30px;
+}
+.payment-info-dropdowns {
+    
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: block;
+    text-align: left;
+    font-size: 18px;
+
+    /* border: 3px dotted greenyellow; */
+}
+.payment-info-dropdowns select {
+
+    border-radius: 15px;
+    font-size: 15px;
+    border: 1px solid #d5ab44;
+    width: 80px;    
+}
+.payment-info-dropdowns select:hover {
+
+    color: #d5ab44;
+}
+
+/* Styling each dropdown separately: */
+.ddn-month {
+
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 50px;
+    
+    /* border: 2px double blueviolet; */
+}
+.ddn-year {
+
+    display: inline-block;
+    margin-right: auto;
+
+    /* border: 2px double blueviolet; */
+}
+.cvc-info {
+
+    display: inline-block;
+    margin-left: 50px;
+}
+.cvc-info input {
+
+    width: 135px;
+    height: 30px;
+}
+.final-button {
+
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.final-button button {
+
+    width: 400px;
+    height: 30px;
+
+    background-color: #FAF6E5;
+    border: 1px solid #d5ab44;
+    border-radius: 5px 5px 5px 5px;
+
+    font-size: 20px;
+    color: #d5ab44;
+
+}
+.final-button button:hover {
+
+    /* color: #d5ab44; */
+    background-color: #d5ab44;
+    color: #FAF6E5;
+
+}
+/* ------------------------------------ */
+
+
+/* Separator */
+.separator {
+    
+    display: inline-block;
+    width: 30%;
+
+    margin: 10px;
+    margin-right: 5px;
+    
+    /* border: 3px double darkolivegreen; */
+}
+/* ------------------------------------ */
+
+
+/* Aside: */
+.review {
+
+    display: block;
+    float: right;
+
+    width: 20%;
+    height: 400px;
+
+    margin: 20px;
+    margin-top: 30px;
+    margin-right: 7%;
+
+    text-align: left;
+
+    border: 2px solid #d5ab44;
+    border-radius: 15px 0px 0px 0px;
+
+    overflow-y: scroll;
+}
+.review-title {
+
+    font-size: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.review-1 {
+
+    padding: 5px;
+    margin: 5px;
+    background-color: #FAF6E5;
+    border-radius: 5px;
+}
+
+/* Just one product: */
+.product-img {
+    
+    display: inline-block;
+    width: 40%;
+    padding-left: 10px;
+    padding-right: 2px;
+}
+.product-details {
+
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+}
+.product-price {
+
+    display: inline-block;
+    width: 10%;
+    margin-left: 20px;
+
+    text-align: right;
+    font-size: 20px;
+
+    
+    vertical-align: top;
+}
+.product-quantity {
+
+    padding-left: 10px;
+    margin-top: 1px;
+}
+
+/* Total part: */
+.total {
+
+    background-color: #FAF6E5;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: right;
+}
+.total-total {
+
+    padding: 5px;
+}
+.total-price {
+
+    display: inline-block;
+    text-align: right;
+}
+/* ------------------------------------ */

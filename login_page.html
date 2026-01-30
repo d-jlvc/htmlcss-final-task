@@ -1,0 +1,155 @@
+<!-- Login page: -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>HTML&CSS Practice | Login page</title>
+
+    <meta name="short-decription" content="Practice session for reviewing html-css.">
+    <meta name="goal" content="Learning how to become a top frontender lol.">
+    <meta name="author" content="d-jlvc">
+    <meta name="page-description" content="Creating a login page for imaginary website.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/assets/images/hanker-favicon.ico" type="image/png" sizes="16x16">
+
+    <!-- Style import: -->
+    <!-- Old version: -->
+    <!-- <link rel="stylesheet" href="css/style-old.css"> -->
+    <!-- <link rel="stylesheet" href="css/login-page-old.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- This is a header: -->
+    <header class="page-header">
+
+        <a class="header-logo" href="index.html">
+            <img src="assets/images/hanker-logo-bg-rem.png" alt="hanker-chief-logo" width="100">
+        </a>
+
+        <div class="header-links">
+            <a href="index.html">Home</a>
+            <a href="product_page.html">Shop</a>
+            <a href="assets/page_sims/about-sim.txt" target="_blank">About</a>
+            <a href="assets/page_sims/contact-sim.txt" target="_blank">Contact</a>
+        </div>
+        
+        <div class="header-search">
+            <!-- <img src="assets/images/icon-search.png" alt="search-icon"> -->
+            <input type="text" name="header-searchbox" id="searchbox" placeholder="What are you looking for?">
+            <!-- <button type="submit" id="header-searchbox">Search:</button> -->
+            <button type="submit" id="header-searchbox"><img src="assets/images/icon-search.png" alt="search-icon"></button>
+        </div>
+        
+        <div class="header-icons">
+            <div class="header-icon-cart">
+                <a class="icon-cart" href="checkout_page.html">
+                    <img src="assets/images/icon-shopping-cart-1.png" alt="cart-icon">
+                </a>
+            </div>
+            <div class="header-icon-profile">
+                <a class="icon-profile" href="login_page.html">    
+                    <img src="assets/images/icon-user-1.png" alt="user-icon">
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- This is a login page content: -->
+    <main class="login-page">
+
+        <h2 class="login-title">Login</h2>
+
+        <div class="login-field">
+            <form action="#">
+            
+                <div class="login-email-input">
+                    <label for="email-field">Email</label><br>
+                    <input type="text" name="email" id="email-field" required>
+                </div>
+
+                <br> <!-- Separating inputs manually: -->
+
+                <div class="login-password-input">
+                    <label for="password-field">Password</label><br>
+                    <input type="text" name="password" id="password-field" required>
+                </div>
+                
+                <br> <!-- Separating inputs manually: -->
+
+                <div class="login-remember-me">
+                    <input type="checkbox" name="remember-me" id="remember-chbox">
+                    <label for="remember-chbox">Remember me</label>
+                </div>
+
+                <div class="login-forgot-password">
+                    <a href="assets/page_sims/pass-reset-sim.txt" target="_blank">Forgot password?</a>
+                </div>
+
+                <div class="login-form-submit-button">
+                    <button type="submit">Login</button>
+                </div>
+
+                <div class="login-create-acc">
+                    <p>Or <a href="assets/page_sims/create-acc.txt" target="_blank">Create an Account</a></p>
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+
+    <!-- This is a footer: -->
+    <footer class="page-footer">
+        
+        <div class="footer-shop">
+            <h3>Shop</h3>
+            <li>
+                <ul><a href="#">Hankerschiefs</a></ul>
+                <ul><a href="#">Accessories</a></ul>
+                <ul><a href="#">Gift Cards</a></ul>
+            </li>
+        </div>
+
+        <div class="footer-info">
+            <h3>Information</h3>
+            <li>
+                <ul><a href="assets/page_sims/about-sim.txt" target="_blank">About us</a></ul>
+                <ul><a href="#">Terms and Conditions</a></ul>
+                <ul><a href="#">Privacy policy</a></ul>
+                <ul><a href="#">Delivery and refunds</a></ul>
+            </li>
+        </div>
+
+        <div class="footer-support">
+            <h3>Support</h3>
+            <li>
+                <ul><a href="assets/page_sims/contact-sim.txt" target="_blank">Contact</a></ul>
+                <ul><a href="#">FAQ</a></ul>
+            </li>
+        </div>
+        
+    </footer>
+
+    <!-- This is a social networks links part: -->
+    <div class="social-networks">
+        <a href="https://facebook.com/" target="_blank"><img src="assets/images/icon-facebook.png" alt="facebook-link"></a>
+        <a href="https://instagram.com/" target="_blank"><img src="assets/images/icon-instagram.png" alt="instagram-link"></a>
+    </div>
+
+    <!-- This is an additional info: -->
+    <div class="add-info">
+        <img class="add-info-img" src="assets/images/hanker-logo-bottom.png" alt="sub-logo">
+        <p class="add-info-txt">&copy; Designed by d-jlvc. All rights reserved!</p>
+    </div>
+    
+</body>
+</html>

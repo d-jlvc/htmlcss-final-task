@@ -1,0 +1,395 @@
+/* Overall style for page,
+headers and footers: */
+
+/* Outdated practice version made while building
+first project ever. This version has no scaling or
+responsive design whatsoever. Everything is rewritten
+in style.css.*/
+
+/* Scrollbar setup: */
+::-webkit-scrollbar {
+
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+
+    background: #d5ab44;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #d5ab44;
+}
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* Global font style: */
+* {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+/* Aditional setup: */
+* {
+    box-sizing: border-box;
+}
+body {
+
+    padding-top: 110px;
+    padding-bottom: 5px;
+    background-color: #fefcf6;
+}
+/* ---------------------------------------- */
+
+/* Header setup: */
+header {
+
+    /* Basic header setup */
+    background-color: #FAF6E5;
+    padding: 1px;
+    margin-bottom: 10px;
+    border: 2px solid #d5ab44;
+    border-radius: 15px 0px 0px 0px;
+}
+.page-header {
+
+    position: fixed;
+    padding: 10px 0;
+
+    width: 99%;
+    top: 5px;
+    right: 0.5%;
+    left: 0.5%;
+
+    z-index: 1000;
+}
+
+/* Header -> Logo: */
+.header-logo {
+
+    /* Logo */
+    display: inline-block;
+
+    height: 100px;
+    width: 100px;
+    margin: 8px;
+    margin-left: 40px;
+
+    /* Logo aligning */
+    text-align: center;
+    line-height: 100px;
+    
+    /* Visual guidance. */
+    /* border: 1px solid red; */
+}
+.header-logo img {
+
+    /* Vertical align that combines
+    with line-height in .header-logo: */
+    vertical-align: middle;
+}
+
+/* Header -> Links: */
+.header-links {
+
+    /* Overall nav. links div: */
+    display: inline-block;
+
+    margin-right: 100px;
+    margin-left: 130px;
+
+    
+    /* Visual guidance. */
+    /* border: 1px solid red; */
+}
+.header-links a {
+
+    /* Text options: */
+    padding: 30px;
+
+    /* Text: */
+    font-size: 22px;
+
+    text-decoration: none;
+    color: #0e0e0e;
+
+    /* Visual guidance. */
+    /* border: 1px solid red; */
+}
+a:link, a:visited {
+
+    /* Retaining the same color
+    as the original font color. */
+    color: inherit;
+}
+a:hover {
+
+    /* Hover recolor: */
+    color: #d5ab44; 
+}
+
+/* Header -> Search bar: */
+.header-search {
+
+    /* Search div settings: */
+    display: inline-block;
+    
+    padding: 5px;
+    margin-left: 80px;
+
+    border: 1.2px solid black;
+    border-radius: 15px 0px 15px 0px;
+
+}
+.header-search img {
+
+    /* Search magnifier icon: */
+    margin-left: 20px;
+    margin-right: 22px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+
+    max-width: 20px;
+    height: auto;
+
+    transform: translate(0px, 5.5px);
+}
+.header-search input {
+
+    /* Input field: */
+    width: 400px;
+    height: 30px;
+    
+    background-color: #FAF6E5;
+    border: 0px;
+    margin-bottom: 3px;
+
+    /* Text: */
+    font-size: 20px;
+
+    /* right: 10px; */
+}
+.header-search button {
+
+    /* "Search:" button: */
+    display: inline-block;
+    position: relative;
+    align-items: center;
+
+    /* We fix black border 
+    right margin here, button
+    created huge space on the 
+    right side. */
+    margin-right: -45px;
+
+    width: 70px;
+    height: 26px;
+    right: 78px;
+    top: 2px;
+
+    border: 0.5px solid #d5ab44;
+    border-radius: 5px 5px 5px 5px;
+
+    background-color: #FDFBF2;
+
+    /* Text: */
+    font-size: 20px;
+}
+.header-search button:hover {
+
+    /* Hover recolor: */
+    color: #d5ab44;
+}
+
+/* Header -> Header icons: */
+.header-icon-cart {
+
+    /* Cart icon: */
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 155px;
+
+    text-align: center;
+    transform: translate(0px, 10px);
+
+    /* Visual guidance. */
+    /* border: 1px solid red; */
+}
+.header-icon-cart:hover {
+        
+    /* Hover effect for imgs: */
+    transform: scale(1.3);
+}
+.header-icon-profile {
+
+    /* User profile icon: */
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 34px;
+    text-align: center;
+    transform: translate(0px, 10px);
+
+    /* Visual guidance. */
+    /* border: 1px solid red; */
+}
+.header-icon-profile:hover {
+
+    /* Hover effect for imgs: */
+    transform: scale(1.3);
+}
+/* ---------------------------------------- */
+
+
+/* Footer setup: */
+footer {
+    
+    /* Basic header setup */
+    background-color: #FAF6E5;
+    padding: 1px;
+    margin-bottom: 5px;
+    border: 2px solid #d5ab44;
+    
+    /* border-radius: 0px 15px 0px 15px; */
+}
+.page-footer h3 {
+
+    /* Let's manipulate
+    titles of lists: */
+    padding: 0px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+
+}
+.page-footer li ul {
+    
+    /* Manipulating lists
+    only - <li> and <ul>: */
+    display: block;
+    padding: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    list-style-type: none;
+    
+
+    /* Visual guidance: */
+    /* border: 3px solid rgb(95, 68, 68); */
+}
+.page-footer a {
+    
+    /* Manipulating links
+    only - <a>: */
+    display: inline-block;
+    margin: 2px;
+
+    text-decoration: none;
+    transform: translate(-3px, 0px);
+
+
+    /* Visual guidance: */
+    /* border: 3px solid rgb(155, 253, 102); */
+}
+.footer-shop {
+    
+    /* Footer 'shop' section: */
+    display: inline-block;
+    
+    margin: 10px;
+    margin-left: 300px;
+    margin-right: 420px;
+    
+    text-align: left;
+    list-style-type: none;
+    
+    transform: translate(0px, -45px);
+
+    /* Visual guidance: */
+    /* border: 3px solid red; */
+}
+.footer-info {
+    
+    /* Footer 'info' section: */
+    display: inline-block;
+    
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    list-style-type: none;
+    
+    /* Visual guidance: */
+    /* border: 3px solid red; */
+}
+.footer-support {
+    
+    /* Footer 'info' section: */
+    display: inline-block;
+    
+    margin: 10px;
+    margin-left: 420px;
+    margin-right: 300px;
+    list-style-type: none;
+    
+    transform: translate(0px, -95px);
+
+    /* Visual guidance: */
+    /* border: 3px solid red; */
+}
+/* ---------------------------------------- */
+
+
+/* Additional info setup: */
+.add-info {
+
+    /* Basic header setup */
+    background-color: #FAF6E5;
+    padding: 1px;
+    border: 2px solid #d5ab44;
+    border-radius: 0px 0px 15px 0px;
+    text-align: center;
+}
+.add-info-img {
+
+    /* Image manipulation: */
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+.add-info-txt {
+    
+    /* Text manipulation: */
+    margin: -5px;
+    margin-bottom: 15px;
+
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+/* Social networks setup: */
+.social-networks {
+
+    /* Basic header setup */
+    background-color: #FAF6E5;
+    padding: 5px;
+    padding-top: 10px;
+    border: 2px solid #d5ab44;
+    border-radius: 0px 0px 0px 0px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.social-networks a {
+
+    padding: 20px;
+}

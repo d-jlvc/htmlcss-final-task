@@ -1,0 +1,115 @@
+/* Style for login page [login_page.html]: */
+
+/* Outdated practice version made while building
+first project ever. This version has no scaling or
+responsive design whatsoever. Everything is rewritten
+in style.css.*/
+
+/* Login page: */
+.login-page {
+
+    /* Main page edits: */
+    text-align: center;
+}
+.login-title {
+
+    /* Login title edits: */
+    margin: 60px;
+    margin-bottom: 5px;
+    padding: 20px;
+    padding-bottom: 5px;
+
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+.login-field {
+
+    /* Complete login field
+    box edits: */
+    display: inline-block;
+
+    padding: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    
+    border: 1.8px solid #d5ab44;
+    border-radius: 15px;
+}
+.login-email-input {
+
+    display: inline-block;
+    padding: 10px;
+    text-align: left;
+
+    font-size: 20px;
+}
+.login-email-input input {
+
+    width: 250px;
+    height: auto;
+
+    font-weight: 200;
+    font-size: 15px;
+}
+.login-password-input {
+    
+    display: inline-block;
+
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: left;
+
+    font-size: 20px;
+}
+.login-password-input input {
+
+    width: 250px;
+    height: auto;
+
+    font-weight: 200;
+    font-size: 15px;
+}
+.login-remember-me {
+    
+    display: inline-block;
+
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.login-forgot-password {
+    
+    display: inline-block;
+
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.login-form-submit-button {
+    
+    display: block;
+    
+    padding: 10px;
+    margin: 10px;
+}
+.login-form-submit-button button {
+
+    width: 150px;
+    height: 40px;
+
+    font-size: 20px;
+    font-weight: 400;
+    
+    text-align: center;
+    text-justify: auto;
+}
+.login-form-submit-button button:hover {
+
+    /* Hover recolor: */
+    color: #d5ab44;
+}
+

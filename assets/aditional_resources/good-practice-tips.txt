@@ -1,0 +1,44 @@
+# Good practice tips for .css
+
+/* 1. Global reset: */
+* {
+    margin: 0;
+    padding: 0;
+
+    /* Removing borders as 
+    a sizing factor: */
+    box-sizing: border-box; 
+}
+
+/* 2. Overall setup: */
+html {
+
+    /* Font size standard: */
+    font-size: 16px; 
+
+    /* Smooth scroll: */
+    scroll-behavior: smooth; 
+}
+
+/* 3. Images setup: */
+img {
+
+    /* Keeping img-s in 
+    borders (unless specified)
+    otherwise: */
+    max-width: 100%;
+
+    /* Removes empty space
+    underneath img-s: */
+    display: block;  
+}
+
+/* 4. Typography setup */
+body {
+
+    /* Text is more spacious: */
+    line-height: 1.5;
+
+    /* Fonts look sharper: */
+    -webkit-font-smoothing: antialiased;
+}

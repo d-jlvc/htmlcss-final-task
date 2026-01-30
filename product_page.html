@@ -1,0 +1,342 @@
+<!-- Product page: -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>HTML&CSS Practice | Product page</title>
+
+    <meta name="short-decription" content="Practice session for reviewing html-css.">
+    <meta name="goal" content="Learning how to become a top frontender lol.">
+    <meta name="author" content="d-jlvc">
+    <meta name="page-description" content="Creating a products page for imaginary website.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/assets/images/hanker-favicon.ico" type="image/png" sizes="16x16">
+
+    <!-- Style import: -->
+    <!-- Old version: -->
+    <!-- <link rel="stylesheet" href="css/style-old.css"> -->
+    <!-- <link rel="stylesheet" href="css/product-page-old.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- This is a header: -->
+    <header class="page-header">
+        
+        <a class="header-logo" href="index.html">
+            <img src="assets/images/hanker-logo-bg-rem.png" alt="hanker-chief-logo" width="100">
+        </a>
+        
+        <div class="header-links">
+            <a href="index.html">Home</a>
+            <a href="product_page.html">Shop</a>
+            <a href="assets/page_sims/about-sim.txt" target="_blank">About</a>
+            <a href="assets/page_sims/contact-sim.txt" target="_blank">Contact</a>
+        </div>
+        
+        <div class="header-search">
+            <!-- <img src="assets/images/icon-search.png" alt="search-icon"> -->
+            <input type="text" name="header-searchbox" id="searchbox" placeholder="What are you looking for?">
+            <!-- <button type="submit" id="header-searchbox">Search:</button> -->
+            <button type="submit" id="header-searchbox"><img src="assets/images/icon-search.png" alt="search-icon"></button>
+        </div>
+        
+        <div class="header-icons">
+            <div class="header-icon-cart">
+                <a class="icon-cart" href="checkout_page.html">
+                    <img src="assets/images/icon-shopping-cart-1.png" alt="cart-icon">
+                </a>
+            </div>
+            <div class="header-icon-profile">
+                <a class="icon-profile" href="login_page.html">    
+                    <img src="assets/images/icon-user-1.png" alt="user-icon">
+                </a>
+            </div>
+        </div>
+        
+    </header>
+
+    <!-- Overall main page div: -->
+    <div class="product-page-mains">
+    
+    <!-- Title -->
+    <h2 class="product-page-title">Our products:</h2>
+
+    <!-- This is a side filter menu: -->
+    <aside class="as-filter">
+
+        <div class="as-filter-title">
+            <h2>Filters</h2>
+        </div>
+
+        <br><!-- Manual separation: -->
+        
+        <div class="as-filter-price">
+            <label for="">Price</label> <br><hr>
+
+            <input type="number" name="min" id="min-input" value="20">
+            <span style="margin: 10px;">-</span>
+            <input type="number" name="max" id="max-input" value="500">
+            
+            <div class="the-slider">
+                <input type="range" class="range-min" min="20" max="500" value="50">
+            </div>
+        </div>
+
+        <br><!-- Manual separation: -->
+
+        <div class="as-filter-collection">
+            <label class="filt-labs" for="">Collection:</label> <br><hr>
+
+            <input type="radio" id="standard-col" checked>
+            <label for="standard-col">Standard</label> <br>
+            <input type="radio" id="deluxe-col">
+            <label for="deluxe-col">Deluxe</label>
+        </div>
+
+        <br><!-- Manual separation: -->
+        
+        <div class="as-filter-categories">
+            <label class="filt-labs" for="">Categories:</label> <br><hr>
+            
+            <input type="radio" id="hankerchiefs" checked>
+            <label for="hankerchiefs">Hankerchiefs</label> <br>
+            <input type="radio" id="accessories">
+            <label for="accessories">Accessories</label>
+        </div>
+        
+        <br><!-- Manual separation: -->
+        <br><!-- Manual separation: -->
+
+    </aside>
+
+    <!-- This is a products grid: -->
+    <main class="products">
+
+        <!-- Over-text: -->
+        <div class="overtxt-one">
+            <span class="overtxt-1">Showing 1-6 of 18 products</span>
+        </div>
+        
+        <div class="overtxt-two">
+            <span class="overtxt-2">Sort by:</span>
+            <select name="sort" id="sort">
+                <option value="">--</option>
+                <option value="cheap">Cheapest first:</option>
+                <option value="expensive">Expensive first:</option>
+            </select>
+        </div> 
+        
+        <br><!-- Manual separation: -->
+        
+        <!-- Product I -->
+        <div class="product-div">
+            <div class="product-img">
+                <img src="assets/images/pocket-square-img.png" alt="product-1">
+            </div>
+
+            <div class="product-name">
+                <p>Pocket Square</p>
+                <p>Color: Red</p>
+                <p style="color: rgba(0, 0, 0, 0.6);">Collection: Standard</p>
+            </div>
+
+            <div class="product-price">
+                <p>$22</p>
+            </div>
+
+            <div class="product-add">
+                <button>Add to cart</button>
+            </div>
+        </div>
+
+        <!-- Product II -->
+        <div class="product-div">
+            <div class="product-img">
+                <img src="assets/images/pocket-square-img.png" alt="product-1">
+            </div>
+
+            <div class="product-name">
+                <p>Pocket Square</p>
+                <p>Color: Blue</p>
+                <p style="color: rgba(0, 0, 0, 0.6);">Collection: Standard</p>
+            </div>
+
+            <div class="product-price">
+                <p>$22</p>
+            </div>
+
+            <div class="product-add">
+                <button>Add to cart</button>
+            </div>
+        </div>
+
+        <!-- Product III -->
+        <div class="product-div">
+            <div class="product-img">
+                <img src="assets/images/pocket-square-img.png" alt="product-1">
+            </div>
+
+            <div class="product-name">
+                <p>Pocket Square</p>
+                <p>Color: Brown</p>
+                <p style="color: rgba(0, 0, 0, 0.6);">Collection: Standard</p>
+            </div>
+
+            <div class="product-price">
+                <p>$31</p>
+            </div>
+
+            <div class="product-add">
+                <button>Add to cart</button>
+            </div>
+        </div>
+
+        <!-- Product IV -->
+        <div class="product-div">
+            <div class="product-img">
+                <img src="assets/images/pocket-square-img.png" alt="product-1">
+            </div>
+
+            <div class="product-name">
+                <p>Pocket Square</p>
+                <p>Color: Burgundy</p>
+                <p style="color: rgba(0, 0, 0, 0.6);">Collection: Deluxe</p>
+            </div>
+
+            <div class="product-price">
+                <p>$56</p>
+            </div>
+
+            <div class="product-add">
+                <button>Add to cart</button>
+            </div>
+        </div>
+
+        <!-- Product V -->
+        <div class="product-div">
+            <div class="product-img">
+                <img src="assets/images/pocket-square-img.png" alt="product-1">
+            </div>
+
+            <div class="product-name">
+                <p>Pocket Square</p>
+                <p>Color: Glossy-Bleu</p>
+                <p style="color: rgba(0, 0, 0, 0.6);">Collection: Deluxe</p>
+            </div>
+
+            <div class="product-price">
+                <p>$71</p>
+            </div>
+
+            <div class="product-add">
+                <button>Add to cart</button>
+            </div>
+        </div>
+
+        <!-- Product VI -->
+        <div class="product-div">
+            <div class="product-img">
+                <img src="assets/images/pocket-square-img.png" alt="product-1">
+            </div>
+
+            <div class="product-name">
+                <p>Pocket Square</p>
+                <p>Color: Checkered</p>
+                <p style="color: rgba(0, 0, 0, 0.6);">Collection: Limited Offer</p>
+            </div>
+
+            <div class="product-price">
+                <p>$299</p>
+            </div>
+
+            <div class="product-add">
+                <button>Add to cart</button>
+            </div>
+        </div> 
+   
+    </main> <hr style="width: 100%;">
+
+    <!-- Page selection: -->
+    <div class="page-selection">
+        <button class="nav-buttons">Previous</button>
+        <button class="num-buttons">1</button>
+        <button class="num-buttons">2</button>
+        <button class="num-buttons">3</button>
+        <button class="nav-buttons">Next</button>
+    </div>
+    
+    <!-- Newsletter: -->
+    <div class="newsletter">
+
+        <div class="nl-text">
+            <pre>Wanna stay up to date? Sign up on our newsletter
+and recieve updates about our products in real time!
+            </pre>
+        </div>
+
+        <div class="nl-buttons">
+            <form action="#">
+                <input type="text" name="newsletter-email" id="nl-email" placeholder="Enter your email address..."><br>
+                <button type="submit">Sign up now</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- This is a footer: -->
+    <footer class="page-footer" style="border-top: transparent;">
+        
+        <div class="footer-shop">
+            <h3>Shop</h3>
+            <li>
+                <ul><a href="#">Hankerschiefs</a></ul>
+                <ul><a href="#">Accessories</a></ul>
+                <ul><a href="#">Gift Cards</a></ul>
+            </li>
+        </div>
+
+        <div class="footer-info">
+            <h3>Information</h3>
+            <li>
+                <ul><a href="assets/page_sims/about-sim.txt" target="_blank">About us</a></ul>
+                <ul><a href="#">Terms and Conditions</a></ul>
+                <ul><a href="#">Privacy policy</a></ul>
+                <ul><a href="#">Delivery and refunds</a></ul>
+            </li>
+        </div>
+
+        <div class="footer-support">
+            <h3>Support</h3>
+            <li>
+                <ul><a href="assets/page_sims/contact-sim.txt" target="_blank">Contact</a></ul>
+                <ul><a href="#">FAQ</a></ul>
+            </li>
+        </div>
+        
+    </footer>
+
+    <!-- This is a social networks links part: -->
+    <div class="social-networks">
+        <a href="https://facebook.com/" target="_blank"><img src="assets/images/icon-facebook.png" alt="facebook-link"></a>
+        <a href="https://instagram.com/" target="_blank"><img src="assets/images/icon-instagram.png" alt="instagram-link"></a>
+    </div>
+
+    <!-- This is an additional info: -->
+    <div class="add-info">
+        <img class="add-info-img" src="assets/images/hanker-logo-bottom.png" alt="sub-logo">
+        <p class="add-info-txt">&copy; Designed by d-jlvc. All rights reserved!</p>
+    </div>
+
+    <!-- Closing product-page-main: -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!-- Login page: -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>HTML&CSS Practice | Checkout page</title>
+
+    <meta name="short-decription" content="Practice session for reviewing html-css.">
+    <meta name="goal" content="Learning how to become a top frontender lol.">
+    <meta name="author" content="d-jlvc">
+    <meta name="page-description" content="Creating a checkout page for imaginary website.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/assets/images/hanker-favicon.ico" type="image/png" sizes="16x16">
+
+    <!-- Style import: -->
+    <!-- Old version: -->
+    <!-- <link rel="stylesheet" href="css/style-old.css"> -->
+    <!-- <link rel="stylesheet" href="css/checkout-page-old.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- This is a header: -->
+    <header class="page-header">
+
+        <a class="header-logo" href="index.html">
+            <img src="assets/images/hanker-logo-bg-rem.png" alt="hanker-chief-logo" width="100">
+        </a>
+
+        <div class="header-links">
+            <a href="index.html">Home</a>
+            <a href="product_page.html">Shop</a>
+            <a href="assets/page_sims/about-sim.txt" target="_blank">About</a>
+            <a href="assets/page_sims/contact-sim.txt" target="_blank">Contact</a>
+        </div>
+        
+        <div class="header-search">
+            <!-- <img src="assets/images/icon-search.png" alt="search-icon"> -->
+            <input type="text" name="header-searchbox" id="searchbox" placeholder="What are you looking for?">
+            <!-- <button type="submit" id="header-searchbox">Search:</button> -->
+            <button type="submit" id="header-searchbox"><img src="assets/images/icon-search.png" alt="search-icon"></button>
+        </div>
+
+        <div class="header-icons">
+            <div class="header-icon-cart">
+                <a class="icon-cart" href="checkout_page.html">
+                    <img src="assets/images/icon-shopping-cart-1.png" alt="cart-icon">
+                </a>
+            </div>
+            <div class="header-icon-profile">
+                <a class="icon-profile" href="login_page.html">    
+                    <img src="assets/images/icon-user-1.png" alt="user-icon">
+                </a>
+            </div>
+        </div>
+
+    </header>
+    
+    <h2 class="checkout-title">Checkout</h2>
+
+    <!-- Checkout and review: -->
+    <div class="total-mains">
+
+    <!-- This is a main page content: -->
+    <main class="checkout-page">
+
+
+        <div class="checkout-form">
+            <form action="#">
+                
+                <!-- Shipping information: -->
+                <div class="shipping">
+
+                    <h3>Shipping information</h3>
+
+                    <div class="shipping-info-general">
+
+                        <div class="shipping-info-first-name">
+                            <label for="firstname">First name</label><br>
+                            <input class="name-input" type="text" name="first-name" id="firstname" required>
+                        </div><br>
+
+                        <div class="shipping-info-last-name">
+                            <label for="lastname">Last name</label><br>
+                            <input type="name-input" type="text" name="last-name" id="lastname" required>
+                        </div><br>
+
+                        <div class="shipping-info-address">
+                            <label for="address-input">Address</label><br>
+                            <input type="text" name="address" id="address-input" required>
+                        </div><br>
+
+                        <div class="shipping-info-addnum">
+                            <label for="">Apartment, suite, number</label><br>
+                            <input type="text" name="apartment" id="apartment">
+                        </div><br>
+
+                        <div class="shipping-info-dropdowns">
+                            <div class="ddn-country">
+                                <label for="shipping-country">Country</label><br>
+                                <select name="country" id="shipping-country">
+                                    <option value=""></option>
+                                    <option value="rs">Serbia</option>
+                                    <option value="cro">Croatia</option>
+                                </select>
+                            </div>
+
+                            <div class="ddn-city">
+                                <label for="shipping-city">City</label><br>
+                                <select name="country" id="shipping-city">
+                                    <option value=""></option>
+                                    <option value="belgrade">Belgrade</option>
+                                    <option value="zagreb">Zagreb</option>
+                                </select>
+                            </div>
+
+                            <div class="ddn-zip">
+                                <label for="shipping-zip">Zipcode</label><br>
+                                <select name="country" id="shipping-city">
+                                    <option value=""></option>
+                                    <option value="bg-zip">11000</option>
+                                    <option value="zg-zip">10000</option>
+                                </select>
+                            </div>
+                        </div><br>
+
+                        <div class="shipping-saveinfo">
+                            <input type="checkbox" name="save-info" id="save-info-chbox">
+                            <label for="remember-chbox">Save contact information</label>
+                        </div>
+
+                    </div>
+                </div><br>
+
+
+                <!-- Payment information: -->
+                <div class="payment">
+
+                    <h3>Payment information</h3>
+
+                    <div class="payment-info-general">
+
+                        <div class="paypal-button">
+                            <button type="button"><img src="assets/images/icon-paypal.png" alt="paypal" width="25"></button>
+                        </div>
+
+                        <div class="cash-button">
+                            <button type="button"><img src="assets/images/icon-cash.png" alt="cash" width="25"></button>
+                        </div>
+
+                        <div class="payment-info-name">
+                            <label for="cardname-input">Cardholder name</label><br>
+                            <input type="text" name="cardname" id="cardname-input" required>
+                        </div><br>
+
+                        <div class="payment-info-card-num">
+                            <label for="cardnum-input">Card number</label><br>
+                            <input type="text" name="cardnum" id="cardnum-input" placeholder="xxxx xxxx xxxx xxxx" required>
+                        </div><br>
+
+                        <div class="payment-info-dropdowns">
+                            <div class="ddn-month">
+                                <label for="card-month">Month</label><br>
+                                <select name="month" id="card-month">
+                                    <option value=""></option>
+                                    <option value="jan">01</option>
+                                    <option value="feb">02</option>
+                                    <option value="mar">03</option>
+                                    <option value="apr">04</option>
+                                    <option value="may">05</option>
+                                    <option value="jun">06</option>
+                                    <option value="jul">07</option>
+                                    <option value="aug">08</option>
+                                    <option value="sep">09</option>
+                                    <option value="oct">10</option>
+                                    <option value="nov">11</option>
+                                    <option value="dec">12</option>
+                                </select>
+                            </div>
+
+                            <div class="ddn-year">
+                                <label for="card-year">Year</label><br>
+                                <select name="year" id="card-year">
+                                    <option value=""></option>
+                                    <option value="25">2025</option>
+                                    <option value="26">2026</option>
+                                    <option value="27">2027</option>
+                                    <option value="28">2028</option>
+                                    <option value="29">2029</option>
+                                    <option value="30">2030</option>
+                                </select>
+                            </div>
+
+                            <div class="cvc-info">
+                                <label for="cvc-number">CVC</label><br>
+                                <input type="text" name="cvc" id="cvc-number" placeholder="e.g. 447" required>
+                            </div>
+                        </div><br>
+
+                        <div class="final-button">
+                            <button type="submit">Pay</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+
+    <!-- Content separator:
+    <div class="separator"></div> -->
+
+    <!-- This is aside content, aka cart review: -->
+    <aside class="review">
+
+        <h2 class="review-title">Cart review</h2>
+        <hr style="width: 100%;">
+
+        <div class="prod-only">
+            <div class="review-1">
+                <div class="product-img">
+                    <img src="assets/images/pocket-square-img.png" alt="product-1" width="100">
+                </div>
+
+                <div class="product-details">
+                    <span><b>Pocket Square Standard</b></span><br>
+                    <span><i>Color: Red</i></span><br>
+                </div>
+
+                <div class="product-price">
+                    <span>$22</span>
+                </div>
+
+                <div class="product-quantity">
+                    <button onclick="">-</button>
+                    <span>1</span>
+                    <button onclick="">+</button>
+                </div>
+            </div><hr style="width: 100%;">
+
+            <div class="review-1">
+                <div class="product-img">
+                    <img src="assets/images/pocket-square-img.png" alt="product-1" width="100">
+                </div>
+
+                <div class="product-details">
+                    <span><b>Pocket Square Deluxe</b></span><br>
+                    <span><i>Color: Burgundy</i></span><br>
+                </div>
+
+                <div class="product-price">
+                    <span>$56</span>
+                </div>
+
+                <div class="product-quantity">
+                    <button onclick="">-</button>
+                    <span>1</span>
+                    <button onclick="">+</button>
+                </div>
+            </div><hr style="width: 100%;">
+        </div>
+
+        <div class="total">
+            <span class="total-total">Total:</span>
+            <span class="total-price">$78</span>
+        </div>
+
+    </aside>
+
+    <!-- Checkout and review closed: -->
+    </div>
+    <!-- This is a footer: -->
+    <footer class="page-footer">
+        
+        <div class="footer-shop">
+            <h3>Shop</h3>
+            <li>
+                <ul><a href="#">Hankerschiefs</a></ul>
+                <ul><a href="#">Accessories</a></ul>
+                <ul><a href="#">Gift Cards</a></ul>
+            </li>
+        </div>
+
+        <div class="footer-info">
+            <h3>Information</h3>
+            <li>
+                <ul><a href="assets/page_sims/about-sim.txt" target="_blank">About us</a></ul>
+                <ul><a href="#">Terms and Conditions</a></ul>
+                <ul><a href="#">Privacy policy</a></ul>
+                <ul><a href="#">Delivery and refunds</a></ul>
+            </li>
+        </div>
+
+        <div class="footer-support">
+            <h3>Support</h3>
+            <li>
+                <ul><a href="assets/page_sims/contact-sim.txt" target="_blank">Contact</a></ul>
+                <ul><a href="#">FAQ</a></ul>
+            </li>
+        </div>
+        
+    </footer>
+
+    <!-- This is a social networks links part: -->
+    <div class="social-networks">
+        <a href="https://facebook.com/" target="_blank"><img src="assets/images/icon-facebook.png" alt="facebook-link"></a>
+        <a href="https://instagram.com/" target="_blank"><img src="assets/images/icon-instagram.png" alt="instagram-link"></a>
+    </div>
+
+    <!-- This is an additional info: -->
+    <div class="add-info">
+        <img class="add-info-img" src="assets/images/hanker-logo-bottom.png" alt="sub-logo">
+        <p class="add-info-txt">&copy; Designed by d-jlvc. All rights reserved!</p>
+    </div>
+
+</body>
+</html>
